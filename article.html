@@ -8,6 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         .nav-link:hover {
@@ -38,6 +39,170 @@
         .bola:hover {
             background-color: rgb(105, 249, 103);
         }
+        /* footer */
+        .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
     </style>
 
 </head>
@@ -47,25 +212,59 @@
 <body class="bg-light">
     <div class="container-fluid">
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-md">
-                <a class="navbar-brand " href="index.html ">
-                    <img src="logo.png " alt="Avatar Logo " style="width:50px; " class="rounded-pill ">
-                </a>
-                <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarNavAltMarkup " aria-controls="navbarNavAltMarkup " aria-expanded="false " aria-label="Toggle navigation ">
-                  <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup ">
-                    <div class="navbar-nav ms-auto ">
-                        <a class="nav-link " aria-current="page " href="index.html ">Home</a>
-                        <a class="nav-link active " href="article.html ">Article</a>
-                        <a class="nav-link " href="contact.html ">contacts</a>
-                    </div>
+<!-- nav -->
+<div class="container-fluid px-md-5 p-5">
+    <div class="row justify-content-between">
+        <div class="col-md-8 order-md-last">
+            <div class="row">
+                <div class="col-md-6 text-center ">
+                    <a class="navbar-brand " href="index.html">Sigmund Freud <span> Car Agency</span></a>
+                </div>
+                <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+                    <form action="#" class="searchform order-lg-last">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control pl-3" placeholder="Search">
+                <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+              </div>
+            </form>
                 </div>
             </div>
-        </nav>
-        <!-- end of navbar -->
+        </div>
+        <div class="col-md-4 d-flex">
+            <div class="social-media m-2" >
+            <p class="mb-2  d-flex">
+                <a href="https://www.facebook.com" class="d-flex align-items-center justify-content-center m-2"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                <a href="https://www.twitter.com" class="d-flex align-items-center justify-content-center m-2"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                <a href="https://www.instagram.com" class="d-flex align-items-center justify-content-center m-2"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+            </p>
+    </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<div class="container-fluid">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fa fa-bars"></span> Menu
+  </button>
+  <div class="collapse navbar-collapse" id="ftco-nav">
+    <ul class="navbar-nav navbar-left">
+        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="article.html" class="nav-link">article</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    </div>
+    <ul class="navbar-nav navbar-right">
+        <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sign out</a></li>
+        </ul>
+  </div>
+
+</div>
+</nav>
+
+<!-- END nav -->
+
 
         <div class="container batasan">
 
@@ -197,9 +396,54 @@
 
         <br>
 
-        <div class="footer">
-
+         <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify"> 
+            we're basically a website about car auction. this is juat dummy page, there's only three active link.
         </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>number</h6>
+              +62 856667773 </span>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#de.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#">Team 2</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
     </div>
 
